@@ -1,7 +1,7 @@
 #Suggested solution for Module 8 Problem Set
 #Question 1:
 #Section 1:
-	SignalsData2013 =read.csv(file="C:\\Users\\Jonathan1\\Desktop\\School\\TA\\MA\\Econometrics M.A\\Econometrics 2\\Problem Sets\\PSetSol_Module7\\SignalsDATA_2013.csv",
+	SignalsData2013 =read.csv(file="PSetSol_Module7\\SignalsDATA_2013.csv",
 	na.strings=c("NA",".",""))
 	
 	SignalsData2013$FDATE = as.character(SignalsData2013$FDATE)
@@ -69,7 +69,7 @@
 
 #Section 4:
 
-	SignalsData =read.csv(file="C:\\Users\\Jonathan1\\Desktop\\School\\TA\\MA\\Econometrics M.A\\Econometrics 2\\Problem Sets\\PSetSol_Module8\\SignalsDATA_201508_Annual.csv",
+	SignalsData =read.csv(file="PSetSol_Module8\\SignalsDATA_201508_Annual.csv",
 	na.strings=c("NA",".",""))
 	SignalsData$FDATE = as.character(SignalsData$FDATE)
 	SignalsData$FDATE = as.Date(SignalsData$FDATE,format = "%Y-%m-%d")
