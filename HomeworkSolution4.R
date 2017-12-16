@@ -28,7 +28,7 @@ moment(X_1000000,order= 2,central=TRUE)
 
 #Question 3:
 #i Load the data:
-SignalsData =read.csv(file="C:\\Users\\Jonathan1\\Desktop\\School\\TA\\MA\\Econometrics M.A\\Econometrics 1\\Problem Sets\\PSetSol_Module4\\SignalsData2013.csv",
+SignalsData =read.csv(file="PSetSol_Module4\\SignalsData2013.csv",
                       na.strings=c("NA",".",""))
 SignalsData$FDATE = as.character(SignalsData$FDATE)
 SignalsData$FDATE = as.Date(SignalsData$FDATE,format = "%Y-%m-%d")
@@ -427,7 +427,7 @@ TwoT_Ratio_Estimate_SIZE
 
 #Question 3:
 #a: loading data and adding day of the week:
-CRSP =read.csv(file="C:\\Users\\Jonathan1\\Desktop\\school\\TA\\MA\\Econometrics M.A\\Econometrics 1\\Problem Sets\\IndexesDATA_201503_Daily.csv",
+CRSP =read.csv(file="IndexesDATA_201503_Daily.csv",
                na.strings=c("NA",".",""))
 CRSP$TrdDATE = as.Date(as.character(CRSP$TrdDATE), format='%Y%m%d')
 CRSP$WEEKDAY = weekdays(CRSP$TrdDATE)
