@@ -75,7 +75,7 @@ cor(x,y,method="spearman")
 
 #Question 4 - GFD
 #Load the file:
-JPM = read.csv(file="C:\\Users\\Jonathan1\\Desktop\\school\\TA\\MA\\Econometrics M.A\\Econometrics 1\\Problem Sets\\PSetSol_Module3\\JPM.csv",
+JPM = read.csv(file="JPM.csv",
                na.strings=c("NA",".",""))
 #Remove days with 0 volume (not required in question):
 JPM = subset(JPM, JPM$Volume!=0)
@@ -101,8 +101,7 @@ kurtosis(JPM$Close_Percent_Change[JPM$Volume > quantile(JPM$Volume,0.8)])
 require(doBy)
 require(plyr)
 #i: load the data file:
-SignalsData = read.csv(file="C:\\Users\\Jonathan1\\Desktop\\School\\TA\\MA\\Econometrics M.A\\Econometrics 1\\Problem Sets\\PSetSol_Module3\\SignalsDATA_201508_Annual - Full file.csv",
-                       na.strings=c("NA",".",""))
+SignalsData = read.csv(file="SignalsDATA_201508_Annual - Full file.csv", na.strings=c("NA",".",""))
 SignalsData$FDATE = as.character(SignalsData$FDATE)
 SignalsData$FDATE = as.Date(SignalsData$FDATE,format = "%Y-%m-%d")
 class(SignalsData$FDATE)
