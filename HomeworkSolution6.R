@@ -47,7 +47,7 @@
 
 #Question 4:
 #Section b)
-	Q4 =read.csv(file="C:\\Users\\Jonathan1\\Desktop\\School\\TA\\MA\\Econometrics M.A\\Econometrics 2\\Problem Sets\\PSetSol_Module6\\Module6_PS_Q4.csv",
+	Q4 =read.csv(file="Module6_PS_Q4.csv",
 	na.strings=c("NA",".",""))
 	Fit_4b = lm(Return ~ Analyst_PCT,data=Q4)
 	Summary_Fit_4b = summary(Fit_4b)	
@@ -122,7 +122,7 @@
 	jarque.bera.test(RES)
 
 #Question 5:
-	Q5 = read.table(file="C:\\Users\\Jonathan1\\Desktop\\School\\TA\\MA\\Econometrics M.A\\Econometrics 2\\Problem Sets\\PSetSol_Module6\\Module6_PS_CEOSAL2.txt",
+	Q5 = read.table(file="PSetSol_Module6\\Module6_PS_CEOSAL2.txt",
 	na.strings=c("NA",".",""))
 	View(Q5)
 	colnames(Q5) = c("SALARY", "AGE", "COLLEGE", "GRAD", "COMTEN", "CEOTEN", "SALES", "PROFITS",
@@ -179,7 +179,7 @@
 	(cor(Q5$SALARY, Fit_5c$fitted.values))^2	
 
 #Section e)
-	Q5EF = read.table(file="C:\\Users\\Jonathan1\\Desktop\\School\\TA\\MA\\Econometrics M.A\\Econometrics 2\\Problem Sets\\PSetSol_Module6\\Module6_PS_RDCHEM.txt",
+	Q5EF = read.table(file="PSetSol_Module6\\Module6_PS_RDCHEM.txt",
 	header=, as.is=TRUE, na.strings=c("NA", ".", ""))
 	colnames(Q5EF) = c("RD", "SALES", "PROFITS", "RDINTENS", "PROFMARG", "SALESSQ", "LSALES", "LRD")
 	
