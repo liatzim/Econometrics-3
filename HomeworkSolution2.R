@@ -30,7 +30,7 @@
 
 ##Question 3:
 #i: load the file and plot the empirical density and empirical cumulative density functions of the VWRET
-	CRSP =read.csv(file="C:\\Users\\Jonathan1\\Desktop\\school\\TA\\MA\\Econometrics M.A\\Econometrics 1\\Problem Sets\\IndexesDATA_201503_Daily.csv",
+	CRSP =read.csv(file="IndexesDATA_201503_Daily.csv",
 		na.strings=c("NA",".",""))
 	head(CRSP)
 #ii:  5 highest values of SVWRET:
@@ -64,12 +64,9 @@
 
 #Question 4:
 #i: Load data and combine:
-	AAPL = read.csv(file="C:\\Users\\Jonathan1\\Desktop\\school\\TA\\MA\\Econometrics M.A\\Econometrics 1\\Problem Sets\\PSetSol_Module2\\AAPL.csv",
-		na.strings=c("NA",".",""))
-	IBM = read.csv(file="C:\\Users\\Jonathan1\\Desktop\\school\\TA\\MA\\Econometrics M.A\\Econometrics 1\\Problem Sets\\PSetSol_Module2\\IBM.csv",
-		na.strings=c("NA",".",""))
-	CSCO = read.csv(file="C:\\Users\\Jonathan1\\Desktop\\school\\TA\\MA\\Econometrics M.A\\Econometrics 1\\Problem Sets\\PSetSol_Module2\\CSCO.csv",
-		na.strings=c("NA",".",""))
+	AAPL = read.csv(file="AAPL.csv", na.strings=c("NA",".",""))
+	IBM = read.csv(file="IBM.csv",na.strings=c("NA",".",""))
+	CSCO = read.csv(file="CSCO.csv",na.strings=c("NA",".",""))
 	head(AAPL)
 	head(IBM)
 	head(CSCO)
