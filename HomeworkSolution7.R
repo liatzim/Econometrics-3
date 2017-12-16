@@ -1,7 +1,7 @@
 #Suggested Solution for Module7_PS
 #Question 1:
 #Section a:
-	Q1 = read.table("C:\\Users\\Jonathan1\\Desktop\\School\\TA\\MA\\Econometrics M.A\\Econometrics 2\\Problem Sets\\PSetSol_Module7\\Module7_PS_HPRICE1.txt",
+	Q1 = read.table("PSetSol_Module7\\Module7_PS_HPRICE1.txt",
 	header=F,na.string=c("na","NA","."))
 
 	names(Q1) = c("price","assess","bdrms","lotsize","sqrft",
@@ -88,7 +88,7 @@
 
 #Question 2:
 #Section a:
-	SignalsData2013 =read.csv(file="C:\\Users\\Jonathan1\\Desktop\\School\\TA\\MA\\Econometrics M.A\\Econometrics 2\\Problem Sets\\PSetSol_Module7\\SignalsDATA_2013.csv",
+	SignalsData2013 =read.csv(file="PSetSol_Module7\\SignalsDATA_2013.csv",
 	na.strings=c("NA",".",""))
 
 	FitQ2 = lm(RET_CompP1P12 ~ log(SIZE) + BTM, data = SignalsData2013)
@@ -164,7 +164,7 @@
 	
 #Question 4:
 #Section a:
-	SignalsData =read.csv(file="C:\\Users\\Jonathan1\\Desktop\\School\\TA\\MA\\Econometrics M.A\\Econometrics 2\\Problem Sets\\PSetSol_Module7\\SignalsDATA_201508_Annual.csv",
+	SignalsData =read.csv(file="PSetSol_Module7\\SignalsDATA_201508_Annual.csv",
 	na.strings=c("NA",".",""))
 
 	FitQ4_a_TOT = lm(RET_CompP1P12 ~ BTM + log(SIZE) + AG, data = SignalsData)
