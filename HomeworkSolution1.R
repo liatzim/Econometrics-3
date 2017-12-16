@@ -122,7 +122,7 @@ write.csv(RED,file="REDUCED.csv")
 
 ##Question 4 - Optional
 #i: read the three data sets into R
-setwd("C:\\Users\\Jonathan1\\Desktop\\school\\TA\\MA\\Econometrics M.A\\Econometrics 1\\Problem Sets\\PSetSol_Module1")
+setwd("PSetSol_Module1")
 
 GOOGL = read.csv(file= "GOOG_20151021_PS1.csv",
                  na.strings=c("NA",".",""))
